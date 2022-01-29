@@ -37,7 +37,12 @@ class UsersController < ApplicationController
   end
 
   def destroy
-    render json: {message: "sanity check"}
+    user = User.find(params[:id])
+    if user.destroy
+      render json: {message: "User has been successfully deleted."}
+    else
+      render json: {errors: user.errors.full_messages}, status: :unprocessable_entity
+    end
   end
 
 end

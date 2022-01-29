@@ -4,11 +4,11 @@ POST {{domain}}/users/
 Content-Type: application/json
 
 {
-  "name": "jack",
-  "email": "jack@gmail.com",
+  "name": "throwaway",
+  "email": "throw@gmail.com",
   "password": "password",
   "password_confirmation": "password",
-  "profile_image": "https://images.pexels.com/photos/5974249/pexels-photo-5974249.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+  "profile_image": "delete_me.jpg"
 }
 
 ###User Show
@@ -23,4 +23,4 @@ Content-Type: application/json
 }
 
 ###User Destroy
-DELETE {{domain}}/users/1
+DELETE {{domain}}/users/5
