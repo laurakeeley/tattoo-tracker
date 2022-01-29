@@ -1,6 +1,5 @@
-###Clients
 
-###Create
+###User Create
 POST http://localhost:3000/users/
 Content-Type: application/json
 
@@ -11,3 +10,6 @@ Content-Type: application/json
   "password_confirmation": "password",
   "profile_image": "https://images.pexels.com/photos/5974249/pexels-photo-5974249.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
 }
+
+###User Show
+GET http://localhost:3000/users/1
