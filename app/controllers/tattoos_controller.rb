@@ -12,4 +12,9 @@ class TattoosController < ApplicationController
     end
   end
 
+   def show
+    tattoo = Tattoo.find(params[:id])
+    render json: tattoo
+  end
+
 end

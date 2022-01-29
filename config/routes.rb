@@ -12,7 +12,7 @@ Rails.application.routes.draw do
 
   #tattoos
   post "/tattoos" => "tattoos#create"
-  # get "/users/:id" => "users#show"
+  get "/tattoos/:id" => "tattoos#show"
   # patch "/users/:id" => "users#update"
   # delete "/users/:id" => "users#destroy"
 end
