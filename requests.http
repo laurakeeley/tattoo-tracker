@@ -35,3 +35,6 @@ Content-Type: application/json
   "price": "500.00",
   "time": "5:00"
 }
+
+###TATTOO SHOW
+GET {{domain}}/tattoos/1
