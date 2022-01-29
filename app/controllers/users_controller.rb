@@ -23,7 +23,13 @@ class UsersController < ApplicationController
   end
 
   def update
-    render json: {message: "sanity check"}
+    user = User.find(params[:id])
+    user.name = params[:name] || user.name
+    user.email = params[:email] || user.email
+    user.profile_image = params[:profile_image] || user.profile_image
+    user.type = params[:type] || user.type
+    user.save
+    render json: user
   end
 
 
