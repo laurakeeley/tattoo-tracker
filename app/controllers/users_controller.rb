@@ -22,7 +22,9 @@ class UsersController < ApplicationController
     render json: user
   end
 
-
+  def update
+    render json: {message: "sanity check"}
+  end
 
 
 end

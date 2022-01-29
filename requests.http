@@ -1,6 +1,6 @@
-
+@domain = http://localhost:3000
 ###User Create
-POST http://localhost:3000/users/
+POST {{domain}}/users/
 Content-Type: application/json
 
 {
@@ -12,4 +12,7 @@ Content-Type: application/json
 }
 
 ###User Show
-GET http://localhost:3000/users/1
+GET {{domain}}/users/1
+
+###User Update
+PATCH {{domain}}/users/1
