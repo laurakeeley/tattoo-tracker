@@ -1,7 +1,7 @@
 ###Clients
 
 ###Create
-POST http://localhost:3000/clients/
+POST http://localhost:3000/users/
 Content-Type: application/json
 
 {
