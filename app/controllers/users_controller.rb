@@ -28,8 +28,12 @@ class UsersController < ApplicationController
     user.email = params[:email] || user.email
     user.profile_image = params[:profile_image] || user.profile_image
     user.type = params[:type] || user.type
-    user.save
-    render json: user
+    
+    if user.save
+      render json: user
+    else 
+      render json: {errors: user.errors.full_messages}, status: :unprocessable_entity
+    end
   end
 
 
