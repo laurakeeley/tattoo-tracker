@@ -1,0 +1,13 @@
+###Clients
+
+###Create
+POST http://localhost:3000/clients/
+Content-Type: application/json
+
+{
+  "name": "jack",
+  "email": "jack@gmail.com",
+  "password": "password",
+  "password_confirmation": "password",
+  "profile_image": "https://images.pexels.com/photos/5974249/pexels-photo-5974249.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+}
