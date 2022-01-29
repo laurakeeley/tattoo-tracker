@@ -8,7 +8,7 @@ class UsersController < ApplicationController
       password: params[:password],
       password_confirmation: params[:password_confirmation],
       profile_image: params[:profile_image],
-      type: params[:type]
+      classification: params[:classification]
     )
     if user.save
       render json: user
@@ -27,7 +27,7 @@ class UsersController < ApplicationController
     user.name = params[:name] || user.name
     user.email = params[:email] || user.email
     user.profile_image = params[:profile_image] || user.profile_image
-    user.type = params[:type] || user.type
+    user.classification = params[:classification] || user.classification
     
     if user.save
       render json: user
@@ -36,5 +36,8 @@ class UsersController < ApplicationController
     end
   end
 
+  def destroy
+    render json: {message: "sanity check"}
+  end
 
 end

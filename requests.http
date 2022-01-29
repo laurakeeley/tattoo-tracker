@@ -15,9 +15,12 @@ Content-Type: application/json
 GET {{domain}}/users/1
 
 ###User Update
-PATCH {{domain}}/users/1
+PATCH {{domain}}/users/4
 Content-Type: application/json
 
 {
-  "type": "client"
+  "classification": "artist"
 }
+
+###User Destroy
+DELETE {{domain}}/users/1
