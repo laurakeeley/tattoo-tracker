@@ -24,3 +24,14 @@ Content-Type: application/json
 
 ###User Destroy
 DELETE {{domain}}/users/5
+
+###TATTOOS####################
+
+###TATTOO CREATE
+POST {{domain}}/tattoos/
+Content-Type: application/json
+
+{
+  "price": "500.00",
+  "time": "5:00"
+}
