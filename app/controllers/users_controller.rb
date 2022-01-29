@@ -18,7 +18,8 @@ class UsersController < ApplicationController
   end
 
   def show
-    render json: {message: "sanity check"}
+    user = User.find(params[:id])
+    render json: user
   end
 
 
