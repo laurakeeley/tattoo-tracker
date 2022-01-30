@@ -59,3 +59,6 @@ Content-Type: application/json
 {
   "url": "https://images.pexels.com/photos/4125687/pexels-photo-4125687.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
 }
+
+###IMAGE SHOW
+GET {{domain}}/images/1
