@@ -49,3 +49,13 @@ Content-Type: application/json
 
 ###TATTOO DESTROY
 DELETE {{domain}}/tattoos/5
+
+###IMAGES#######################################
+
+###IMAGE CREATE
+POST {{domain}}/images
+Content-Type: application/json
+
+{
+  "url": "https://images.pexels.com/photos/4125687/pexels-photo-4125687.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+}

@@ -2,7 +2,7 @@ class ImagesController < ApplicationController
 
   def create
     image = Image.new(
-      url: params[:url],
+      url: params[:url]
     )
     if image.save
       render json: image
