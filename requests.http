@@ -65,3 +65,14 @@ GET {{domain}}/images/1
 
 ###IMAGE DESTROY
 DELETE {{domain}}/images/4
+
+###RELATIONSHIPS##############################
+
+###RELATIONSHIPS CREATE
+POST {{domain}}/relationships/
+Content-Type: application/json
+
+{
+  "artist_id": 4,
+  "client_id": 1
+}
