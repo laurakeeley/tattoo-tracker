@@ -1,14 +1,14 @@
 @domain = http://localhost:3000
 ###User Create
-POST {{domain}}/users/
+POST {{domain}}/users
 Content-Type: application/json
 
 {
-  "name": "throwaway",
-  "email": "throw@gmail.com",
+  "name": "jack",
+  "email": "jack@gmail.com",
   "password": "password",
   "password_confirmation": "password",
-  "profile_image": "delete_me.jpg"
+  "profile_image": "jack.jpg"
 }
 
 ###User Show

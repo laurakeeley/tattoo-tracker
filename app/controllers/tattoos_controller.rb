@@ -3,7 +3,8 @@ class TattoosController < ApplicationController
   def create
     tattoo = Tattoo.new(
       price: params[:price],
-      time: params[:time]
+      time: params[:time],
+      tattoo_id: params[:tattoo_id]
     )
     if tattoo.save
       render json: tattoo
@@ -21,6 +22,7 @@ class TattoosController < ApplicationController
     tattoo = Tattoo.find(params[:id])
     tattoo.price = params[:price] || tattoo.price
     tattoo.time = params[:time] || tattoo.time
+    tattoo.tattoo_id = params[:tattoo_id] || tattoo.tattoo_id
 
     
     if tattoo.save
