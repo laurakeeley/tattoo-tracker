@@ -38,3 +38,4 @@ Content-Type: application/json
 
 ###TATTOO SHOW
 GET {{domain}}/tattoos/1
+

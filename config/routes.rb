@@ -13,6 +13,6 @@ Rails.application.routes.draw do
   #tattoos
   post "/tattoos" => "tattoos#create"
   get "/tattoos/:id" => "tattoos#show"
-  # patch "/users/:id" => "users#update"
+  patch "/tattoos/:id" => "tattoos#update"
   # delete "/users/:id" => "users#destroy"
 end

@@ -17,4 +17,17 @@ class TattoosController < ApplicationController
     render json: tattoo
   end
 
+  def update
+    tattoo = Tattoo.find(params[:id])
+    tattoo.price = params[:price] || tattoo.price
+    tattoo.time = params[:time] || tattoo.time
+
+    
+    if tattoo.save
+      render json: tattoo
+    else 
+      render json: {errors: tattoo.errors.full_messages}, status: :unprocessable_entity
+    end
+  end
+
 end
