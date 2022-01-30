@@ -22,7 +22,7 @@ class TattoosController < ApplicationController
     tattoo = Tattoo.find(params[:id])
     tattoo.price = params[:price] || tattoo.price
     tattoo.time = params[:time] || tattoo.time
-    tattoo.tattoo_id = params[:tattoo_id] || tattoo.tattoo_id
+    tattoo.user_id = params[:user_id] || tattoo.user_id
 
     
     if tattoo.save

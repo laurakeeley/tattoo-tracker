@@ -44,7 +44,7 @@ PATCH {{domain}}/tattoos/4
 Content-Type: application/json
 
 {
-  "price": "600.00"
+  "user_id": 1
 }
 
 ###TATTOO DESTROY
