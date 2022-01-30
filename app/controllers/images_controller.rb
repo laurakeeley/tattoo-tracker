@@ -11,4 +11,9 @@ class ImagesController < ApplicationController
     end
   end
 
+  def show
+    image = Image.find(params[:id])
+    render json: image
+  end
+
 end
