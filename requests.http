@@ -62,3 +62,6 @@ Content-Type: application/json
 
 ###IMAGE SHOW
 GET {{domain}}/images/1
+
+###IMAGE DESTROY
+DELETE {{domain}}/images/4
