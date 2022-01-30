@@ -8,7 +8,8 @@ class UsersController < ApplicationController
       password: params[:password],
       password_confirmation: params[:password_confirmation],
       profile_image: params[:profile_image],
-      classification: params[:classification]
+      classification: params[:classification],
+      tattoo_id: params[:tattoo_id]
     )
     if user.save
       render json: user
@@ -28,6 +29,7 @@ class UsersController < ApplicationController
     user.email = params[:email] || user.email
     user.profile_image = params[:profile_image] || user.profile_image
     user.classification = params[:classification] || user.classification
+    user.tattoo_id = params[:tattoo_id] || user.tattoo_id
     
     if user.save
       render json: user
