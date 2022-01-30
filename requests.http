@@ -32,8 +32,8 @@ POST {{domain}}/tattoos/
 Content-Type: application/json
 
 {
-  "price": "500.00",
-  "time": "5:00"
+  "price": "700.00",
+  "time": "7:00"
 }
 
 ###TATTOO SHOW
@@ -46,3 +46,6 @@ Content-Type: application/json
 {
   "price": "600.00"
 }
+
+###TATTOO DESTROY
+DELETE {{domain}}/tattoos/5
