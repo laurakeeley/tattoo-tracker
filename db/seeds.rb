@@ -12,4 +12,4 @@
 
 # Tattoo.create!([{price: 430.00, time: "4:00"}, {price: 10.00, time: "00:30"}, {price: 50.00, time: "1:00"}])
 
-Image.create!([{url: "https://images.pexels.com/photos/2623692/pexels-photo-2623692.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"}, {url: "https://images.pexels.com/photos/5112343/pexels-photo-5112343.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"}, {url: "https://images.pexels.com/photos/4125687/pexels-photo-4125687.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"},])
+# Image.create!([{url: "https://images.pexels.com/photos/2623692/pexels-photo-2623692.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"}, {url: "https://images.pexels.com/photos/5112343/pexels-photo-5112343.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"}, {url: "https://images.pexels.com/photos/4125687/pexels-photo-4125687.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"},])
