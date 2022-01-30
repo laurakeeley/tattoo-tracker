@@ -14,5 +14,5 @@ Rails.application.routes.draw do
   post "/tattoos" => "tattoos#create"
   get "/tattoos/:id" => "tattoos#show"
   patch "/tattoos/:id" => "tattoos#update"
-  # delete "/users/:id" => "users#destroy"
+  delete "/tattoos/:id" => "tattoos#destroy"
 end

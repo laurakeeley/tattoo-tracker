@@ -29,5 +29,13 @@ class TattoosController < ApplicationController
       render json: {errors: tattoo.errors.full_messages}, status: :unprocessable_entity
     end
   end
-
+  
+  def destroy
+    tattoo = Tattoo.find(params[:id])
+    if tattoo.destroy
+      render json: {message: "Tattoo has been successfully deleted."}
+    else
+      render json: {errors: tattoo.errors.full_messages}, status: :unprocessable_entity
+    end
+  end
 end
