@@ -24,7 +24,8 @@ class UsersController < ApplicationController
   end
 
   def update
-    user = User.find(params[:id])
+    user = current_user
+    
     user.name = params[:name] || user.name
     user.email = params[:email] || user.email
     user.profile_image = params[:profile_image] || user.profile_image
