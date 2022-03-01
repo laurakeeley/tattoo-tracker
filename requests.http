@@ -1,4 +1,16 @@
 @domain = http://localhost:3000
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NDYyNDM4NTV9.ntAM08p_A02IX-W8cPH_rajkLD-TnYTlu9W1nlK4xlo
+
+###sessions create
+
+POST {{domain}}/sessions
+Content-Type: application/json
+
+{
+  "email": "laura@gmail.com",
+  "password": "password"
+}
+
 ###User Create
 POST {{domain}}/users
 Content-Type: application/json
