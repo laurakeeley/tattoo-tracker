@@ -23,4 +23,8 @@ Rails.application.routes.draw do
 
   #relationships
   post "/relationships" => "relationships#create"
+
+  #sessions
+  post "/sessions" => "sessions#create"
+  
 end
