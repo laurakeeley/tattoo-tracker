@@ -25,7 +25,7 @@ class UsersController < ApplicationController
 
   def update
     user = current_user
-    
+
     user.name = params[:name] || user.name
     user.email = params[:email] || user.email
     user.profile_image = params[:profile_image] || user.profile_image
@@ -39,7 +39,7 @@ class UsersController < ApplicationController
   end
 
   def destroy
-    user = User.find(params[:id])
+    user = current_user
     if user.destroy
       render json: {message: "User has been successfully deleted."}
     else

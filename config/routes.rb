@@ -7,8 +7,8 @@ Rails.application.routes.draw do
   #users
   post "/users" => "users#create"
   get "/users/:id" => "users#show"
-  patch "/users/:id" => "users#update"
-  delete "/users/:id" => "users#destroy"
+  patch "/users/me" => "users#update"
+  delete "/users/me" => "users#destroy"
 
   #tattoos
   post "/tattoos" => "tattoos#create"
@@ -26,5 +26,5 @@ Rails.application.routes.draw do
 
   #sessions
   post "/sessions" => "sessions#create"
-  
+
 end
