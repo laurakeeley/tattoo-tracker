@@ -27,7 +27,7 @@ Content-Type: application/json
 GET {{domain}}/users/1
 
 ###User Update
-PATCH {{domain}}/users/1
+PATCH {{domain}}/users/me
 Content-Type: application/json
 
 {
